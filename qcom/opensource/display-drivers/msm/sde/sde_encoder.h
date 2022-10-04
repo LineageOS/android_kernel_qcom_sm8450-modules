@@ -191,6 +191,7 @@ enum sde_enc_rc_states {
  *				next update is triggered.
  * @autorefresh_solver_disable	It tracks if solver state is disabled from this
  *				encoder due to autorefresh concurrency.
+ * @vsync_event_wq              Queue to wait for the vsync event complete
  */
 struct sde_encoder_virt {
 	struct drm_encoder base;
@@ -258,6 +259,7 @@ struct sde_encoder_virt {
 	struct msm_mode_info mode_info;
 	bool delay_kickoff;
 	bool autorefresh_solver_disable;
+	wait_queue_head_t vsync_event_wq;
 };
 
 #define to_sde_encoder_virt(x) container_of(x, struct sde_encoder_virt, base)
