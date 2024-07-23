@@ -16,6 +16,24 @@
       "message": "Since commit [1], the flash state is set to CAM_FLASH_STATE_START when\nthe capabilites are queried, however it seems like the xiaomi camera HAL\ndoes that before the flash is initialized, and initializing fails when\nthe flash state is not CAM_FLASH_STATE_INIT (0).\n    \n[1]: 04825f917c176ae7dc9675f2cdc8c827b05cc1f6 (\"msm: camera: flash: Add support for flash stream off\"\n\n\nThis fix is picked from the kailua tags.",
       "revId": "bce3104612c7419178bf625cee9aa7d8653020e9",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c6309f77_52abf532",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2024-07-23T08:30:55Z",
+      "side": 1,
+      "message": "https://git.codelinaro.org/clo/la/platform/vendor/opensource/camera-kernel/-/commit/04825f917c176ae7dc9675f2cdc8c827b05cc1f6\nthat\u0027s the commit which introduced the issue",
+      "parentUuid": "04154854_4a1bd67b",
+      "revId": "bce3104612c7419178bf625cee9aa7d8653020e9",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
