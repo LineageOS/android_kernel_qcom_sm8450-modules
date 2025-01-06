@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "155e9edb_aaf973ad",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 21290
+      },
+      "writtenOn": "2025-01-06T10:25:18Z",
+      "side": 1,
+      "message": "Fixes the following error after on 22.1:\n`sm8450-modules/qcom/opensource/wlan/qcacld-3.0/core/hdd/src/wlan_hdd_sysfs_get_freq_for_pwr.c:134:16: error: stack frame size (2240) exceeds limit (2048) in \u0027wlan_hdd_sysfs_freq_s\nhow\u0027 [-Werror,-Wframe-larger-than]\n  134 | static ssize_t wlan_hdd_sysfs_freq_show(struct kobject *kobj,\n      |                ^`",
+      "revId": "36fc7395a15e631da12bb4012aac9d65be186a53",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
