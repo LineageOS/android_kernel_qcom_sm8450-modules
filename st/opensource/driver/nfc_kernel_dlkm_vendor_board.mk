@@ -12,7 +12,7 @@ endif
 ########## Build kernel module based on local DLKM flag status ##########
 # Build NFC kernel driver
 ifeq ($(NFC_DLKM_ENABLED), true)
-ifeq ($(call is-board-platform-in-list, sun),true)
+ifeq ($(call is-board-platform-in-list, sun parrot),true)
   BOARD_VENDOR_KERNEL_MODULES += $(KERNEL_MODULES_OUT)/stm_nfc_i2c.ko
 endif
 endif
