@@ -63,6 +63,30 @@
       },
       "revId": "e00f1c10a228ef622da115258eddb87f31f869ee",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ff0ec5e2_e04a4937",
+        "filename": "qcom/opensource/audio-kernel/asoc/codecs/wsa883x/wsa883x.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 1616,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2025-12-31T16:02:21Z",
+      "side": 1,
+      "message": "I don\u0027t know if it\u0027s possible on real hw, but this order allows the interrupt to be sent before we run set_bit, possibly printing the same log you saw before",
+      "parentUuid": "327f0a52_f18c6eda",
+      "range": {
+        "startLine": 1614,
+        "startChar": 0,
+        "endLine": 1616,
+        "endChar": 59
+      },
+      "revId": "e00f1c10a228ef622da115258eddb87f31f869ee",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
