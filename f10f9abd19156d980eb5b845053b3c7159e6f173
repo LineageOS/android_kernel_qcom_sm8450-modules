@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ec32a6fe_df920e3f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 11883
+      },
+      "writtenOn": "2026-01-02T11:26:36Z",
+      "side": 1,
+      "message": "Original qcom fix, pick this instead\n\nhttps://github.com/LineageOS/android_kernel_oneplus_sm8750-modules/commit/996d935b81d5bd54b6640351d32b98dfa4b03561\n\nThere\u0027s still a race and you may never disable the irq in case we get a wsa883x_spkr_event right before setting pdm_wd_enabled to true in wsa883x_event_notify, but to fix it properly you need a mutex.\n\nAlso there\u0027s other concurrency fixes made by qcom later on, pick them",
+      "revId": "f10f9abd19156d980eb5b845053b3c7159e6f173",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
