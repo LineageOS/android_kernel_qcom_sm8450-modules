@@ -201,11 +201,7 @@ static struct file *msm_cvp_fget(unsigned int fd, struct task_struct *task,
 
 	rcu_read_lock();
 loop:
-#if (LINUX_VERSION_CODE < KERNEL_VERSION(5, 13, 0))
-	file = fcheck_files(files, fd);
-#else
 	file = files_lookup_fd_rcu(files, fd);
-#endif
 	if (file) {
 		/* File object ref couldn't be taken.
 		 * dup2() atomicity guarantee is the reason
