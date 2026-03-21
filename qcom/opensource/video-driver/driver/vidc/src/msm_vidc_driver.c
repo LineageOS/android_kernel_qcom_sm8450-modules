@@ -16,7 +16,6 @@
 #include "msm_vidc_memory.h"
 #include "msm_vidc_power.h"
 #include "msm_vidc_debug.h"
-#include "msm_vidc_power.h"
 #include "msm_vidc.h"
 #include "msm_vdec.h"
 #include "msm_venc.h"
@@ -436,7 +435,7 @@ void print_vb2_buffer(const char *str, struct msm_vidc_inst *inst,
 	} else if (vb2->type == INPUT_META_PLANE || vb2->type == OUTPUT_META_PLANE) {
 		i_vpr_e(inst,
 			"%s: %s: idx %2d fd %d off %d size %d filled %d\n",
-			str, vb2->type == INPUT_MPLANE ? "INPUT_META" : "OUTPUT_META",
+			str, vb2->type == INPUT_META_PLANE ? "INPUT_META" : "OUTPUT_META",
 			vb2->index, vb2->planes[0].m.fd,
 			vb2->planes[0].data_offset, vb2->planes[0].length,
 			vb2->planes[0].bytesused);
@@ -1418,7 +1417,22 @@ bool msm_vidc_allow_s_fmt(struct msm_vidc_inst *inst, u32 type)
 			allow = true;
 			goto exit;
 		}
+
+		/*
+		 * Some userspace Codec2 stacks reconfigure decoder capture
+		 * format after the session has already transitioned to START,
+		 * once the final output format is known. Rejecting S_FMT for
+		 * capture queues here breaks output port negotiation and causes
+		 * unstable AVC/HEVC decode behaviour in stress/benchmark
+		 * workloads.
+		 */
+		if (is_decode_session(inst) &&
+		    inst->state == MSM_VIDC_START) {
+			allow = true;
+			goto exit;
+		}
 	}
+
 	if (type == INPUT_MPLANE || type == INPUT_META_PLANE) {
 		if (inst->state == MSM_VIDC_START_OUTPUT) {
 			allow = true;
@@ -1428,8 +1442,9 @@ bool msm_vidc_allow_s_fmt(struct msm_vidc_inst *inst, u32 type)
 
 exit:
 	if (!allow)
-		i_vpr_e(inst, "%s: type %d not allowed in state %s\n",
-				__func__, type, state_name(inst->state));
+		i_vpr_e(inst, "%s: type %d (%s) not allowed in state %s\n",
+			__func__, type, v4l2_type_name(type),
+			state_name(inst->state));
 	return allow;
 }
 
