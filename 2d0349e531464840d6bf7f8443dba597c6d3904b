@@ -52,6 +52,24 @@
       "parentUuid": "28fedd52_58b45484",
       "revId": "2d0349e531464840d6bf7f8443dba597c6d3904b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "89ecb542_4daa26eb",
+        "filename": "qcom/opensource/wlan/qca-wifi-host-cmn/hal/wifi3.0/qca6490/hal_6490.c",
+        "patchSetId": 1
+      },
+      "lineNbr": 497,
+      "author": {
+        "id": 33800
+      },
+      "writtenOn": "2026-03-29T21:51:54Z",
+      "side": 1,
+      "message": "Synced with working code fyi, accidentally edited wrong",
+      "parentUuid": "27db990c_a231711d",
+      "revId": "2d0349e531464840d6bf7f8443dba597c6d3904b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
