@@ -324,7 +324,7 @@ static void hal_rx_dump_msdu_start_tlv_6490(void *msdustart, uint8_t dbg_level)
 static void hal_rx_dump_msdu_end_tlv_6490(void *msduend,
 					  uint8_t dbg_level)
 {
-	struct rx_msdu_end *msdu_end = (struct rx_msdu_end *)msduend;
+	struct rx_msdu_end *msdu_end __maybe_unused = (struct rx_msdu_end *)msduend;
 
 	__QDF_TRACE_RL(dbg_level, QDF_MODULE_ID_DP,
 		       "rx_msdu_end tlv (1/3) - "
@@ -494,7 +494,7 @@ uint32_t hal_rx_msdu_start_reception_type_get_6490(uint8_t *buf)
 static uint16_t hal_rx_msdu_end_da_idx_get_6490(uint8_t *buf)
 {
 	struct rx_pkt_tlvs *pkt_tlvs = (struct rx_pkt_tlvs *)buf;
-	struct rx_msdu_end *msdu_end = &pkt_tlvs->msdu_end_tlv.rx_msdu_end;
+	struct rx_msdu_end *msdu_end __maybe_unused = &pkt_tlvs->msdu_end_tlv.rx_msdu_end;
 	uint16_t da_idx;
 
 	da_idx = HAL_RX_MSDU_END_DA_IDX_GET(msdu_end);
