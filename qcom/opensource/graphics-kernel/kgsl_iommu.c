@@ -2356,9 +2356,9 @@ static int kgsl_iommu_set_svm_region(struct kgsl_pagetable *pagetable,
 	 * Protect access to the gpuaddr here to prevent multiple vmas from
 	 * trying to map a SVM region at the same time
 	 */
-	spin_lock(&memdesc->lock);
+	mutex_lock(&memdesc->lock);
 	if (memdesc->gpuaddr) {
-		spin_unlock(&memdesc->lock);
+		mutex_unlock(&memdesc->lock);
 		kmem_cache_free(addr_entry_cache, new);
 		return -EBUSY;
 	}
@@ -2387,14 +2387,14 @@ out:
 	spin_unlock(&pagetable->lock);
 
 	if (ret) {
-		spin_unlock(&memdesc->lock);
+		mutex_unlock(&memdesc->lock);
 		kmem_cache_free(addr_entry_cache, new);
 		return ret;
 	}
 
 	memdesc->gpuaddr = gpuaddr;
 	memdesc->pagetable = pagetable;
-	spin_unlock(&memdesc->lock);
+	mutex_unlock(&memdesc->lock);
 
 	return ret;
 }
