@@ -16,6 +16,23 @@
       "message": "given lack of symlinks in Makefile seen here https://review.lineageos.org/c/LineageOS/android_kernel_qcom_sm8750-modules/+/492609, are you sure this does anything for us?",
       "revId": "6fc55f6a35152cf9cc190645f2cff39ac6fb9b0f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "e7c87d50_94688d56",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-07-06T15:04:06Z",
+      "side": 1,
+      "message": "tbh, didnt check like i should have",
+      "revId": "6fc55f6a35152cf9cc190645f2cff39ac6fb9b0f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
