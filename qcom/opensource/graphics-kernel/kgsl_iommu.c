@@ -420,11 +420,13 @@ static size_t _iopgtbl_map_page_to_range(struct kgsl_iommu_pt *pt,
 		struct page *page, u64 gpuaddr, size_t range, int prot)
 {
 	struct io_pgtable_ops *ops = pt->pgtbl_ops;
-	size_t mapped = 0, map_size = 0;
+	size_t mapped = 0;
 	u64 addr = gpuaddr;
 	int ret;
 
 	while (range) {
+		size_t map_size = 0;
+
 		ret = ops->map_pages(ops, addr, page_to_phys(page), PAGE_SIZE,
 				     1, prot, GFP_KERNEL, &map_size);
 		if (ret) {
