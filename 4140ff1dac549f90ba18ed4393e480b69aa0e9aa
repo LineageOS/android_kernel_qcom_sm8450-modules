@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3c28f796_5c261f7a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-08-26T11:39:56Z",
+      "side": 1,
+      "message": "May not need this anymore since I was forced to take the graphics driver from parrot66 when I upgraded to their HALs, so will recheck this.",
+      "revId": "4140ff1dac549f90ba18ed4393e480b69aa0e9aa",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
