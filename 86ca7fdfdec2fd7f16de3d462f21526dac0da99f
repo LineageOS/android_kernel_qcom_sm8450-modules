@@ -34,6 +34,42 @@
       "parentUuid": "dce0aff2_0d8fda63",
       "revId": "86ca7fdfdec2fd7f16de3d462f21526dac0da99f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5f485435_a290fd49",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-09-10T17:47:29Z",
+      "side": 1,
+      "message": "если это возможно, хотелось бы что бы данную ошибку проверил у себя кто, на другом девайсе. Мне кажется это общая проблема.",
+      "parentUuid": "85d6a61f_43360494",
+      "revId": "86ca7fdfdec2fd7f16de3d462f21526dac0da99f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6367cce5_1e2a5608",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-09-10T17:47:29Z",
+      "side": 1,
+      "message": "The issue isn’t obvious, so it would be useful to check whether it also affects non-Xiaomi devices.",
+      "parentUuid": "85d6a61f_43360494",
+      "revId": "86ca7fdfdec2fd7f16de3d462f21526dac0da99f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
