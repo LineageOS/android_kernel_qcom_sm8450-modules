@@ -70,6 +70,24 @@
       "parentUuid": "85d6a61f_43360494",
       "revId": "86ca7fdfdec2fd7f16de3d462f21526dac0da99f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "3f8d0323_e919cf49",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-09-10T17:49:36Z",
+      "side": 1,
+      "message": "sorry for rus)",
+      "parentUuid": "6367cce5_1e2a5608",
+      "revId": "86ca7fdfdec2fd7f16de3d462f21526dac0da99f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
