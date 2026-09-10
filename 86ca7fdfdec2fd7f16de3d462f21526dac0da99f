@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "dce0aff2_0d8fda63",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 32837
+      },
+      "writtenOn": "2026-09-10T17:07:45Z",
+      "side": 1,
+      "message": "This fix on the issue reported in:\nhttps://review.lineageos.org/c/LineageOS/android_kernel_xiaomi_sm8450-modules/+/499055",
+      "revId": "86ca7fdfdec2fd7f16de3d462f21526dac0da99f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
