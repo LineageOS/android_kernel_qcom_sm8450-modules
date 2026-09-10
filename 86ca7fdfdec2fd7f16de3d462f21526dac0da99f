@@ -16,6 +16,24 @@
       "message": "This fix on the issue reported in:\nhttps://review.lineageos.org/c/LineageOS/android_kernel_xiaomi_sm8450-modules/+/499055",
       "revId": "86ca7fdfdec2fd7f16de3d462f21526dac0da99f",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "85d6a61f_43360494",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-09-10T17:37:37Z",
+      "side": 1,
+      "message": "Then revert the offending commit in your kernel.",
+      "parentUuid": "dce0aff2_0d8fda63",
+      "revId": "86ca7fdfdec2fd7f16de3d462f21526dac0da99f",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
