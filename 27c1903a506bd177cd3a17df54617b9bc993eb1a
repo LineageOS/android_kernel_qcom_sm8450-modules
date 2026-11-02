@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0ad688a7_ad4367d1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-11-02T22:28:39Z",
+      "side": 1,
+      "message": "Has anyone tested build synx v1 with make instead of bazel?",
+      "revId": "27c1903a506bd177cd3a17df54617b9bc993eb1a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
