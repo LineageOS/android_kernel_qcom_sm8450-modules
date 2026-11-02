@@ -16,6 +16,23 @@
       "message": "Has anyone tested build synx v1 with make instead of bazel?",
       "revId": "27c1903a506bd177cd3a17df54617b9bc993eb1a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "29ddb2ce_08ee221d",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-11-02T22:30:33Z",
+      "side": 1,
+      "message": "I have not, whoever adds support a SM8450 target that still wants to use make would have to do that. That goes for the entire chain",
+      "revId": "27c1903a506bd177cd3a17df54617b9bc993eb1a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
