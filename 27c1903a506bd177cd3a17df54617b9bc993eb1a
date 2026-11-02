@@ -87,6 +87,23 @@
       "parentUuid": "9fab6f9a_fe19bc01",
       "revId": "27c1903a506bd177cd3a17df54617b9bc993eb1a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "586efdbd_85132f63",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 19979
+      },
+      "writtenOn": "2026-11-02T23:20:25Z",
+      "side": 1,
+      "message": "regardless we should be supporting both compilation methods for common kernels unless they are specifically one way or the other (at least 6.6 and lower). avatrn/genevn will need the v1 synx since it depends on synx blobs for the camera stack",
+      "revId": "27c1903a506bd177cd3a17df54617b9bc993eb1a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
