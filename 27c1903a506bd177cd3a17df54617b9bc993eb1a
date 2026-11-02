@@ -69,6 +69,24 @@
       "parentUuid": "72f8e55b_f47993fb",
       "revId": "27c1903a506bd177cd3a17df54617b9bc993eb1a",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5fb969f5_1d8b98f1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-11-02T23:15:05Z",
+      "side": 1,
+      "message": "Those are both parrot no? Parrot doesn\u0027t use synx afaik.",
+      "parentUuid": "9fab6f9a_fe19bc01",
+      "revId": "27c1903a506bd177cd3a17df54617b9bc993eb1a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
