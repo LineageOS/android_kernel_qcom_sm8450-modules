@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2959a2d2_5cc1ab8c",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 29415
+      },
+      "writtenOn": "2026-11-07T19:45:42Z",
+      "side": 1,
+      "message": "Fixed issue seen where WSA_RX0 on ingot was stuck at default of 84, mixer paths set to 70 but was rejected because this limited to 40.",
+      "revId": "c30ff2095a80a44b55995f4d3ef3fdd3b957f6e8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
